@@ -19,9 +19,9 @@ int taille = 0;
 // Fonction Ajouter
 void ajouter() {
     printf("Entrer titre: ");
-    scanf("%s", inf[taille].titre);
+    scanf(" %[^\n]", inf[taille].titre);
     printf("Entrer description: ");
-    scanf("%s", inf[taille].description_de_la_tache);
+    scanf(" %[^\n]", inf[taille].description_de_la_tache);
     
     do
     {
@@ -102,9 +102,9 @@ for ( i = 0; i < taille; i++)
 void modifier(int index) {
     if (index >= 0 && index < taille) {
         printf("Entrer le nouveau titre: ");
-        scanf("%s", inf[index].titre);
+        scanf(" %[^\n]", inf[index].titre);
         printf("Entrer la nouvelle description: ");
-        scanf("%s", inf[index].description_de_la_tache);
+        scanf(" %[^\n]", inf[index].description_de_la_tache);
         printf("Entrer la priorite (1 pour high, 2 pour low): ");
         scanf("%d", &inf[index].la_priorite);
         printf("Entrer date annee: ");
