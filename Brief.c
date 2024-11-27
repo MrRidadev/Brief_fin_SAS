@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+// structure de date
 typedef struct
 {
     int annee;
     int moin;
     int jour;
 } date;
-
+//structure de information de tache
 typedef struct
 {
     char titre[100];
@@ -16,6 +16,7 @@ typedef struct
 } information;
 
 information inf[20];
+// initalisation de table
 int taille = 0;
 
 // Fonction Ajouter
